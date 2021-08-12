@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from 'react'
 
-import { firestore } from "../../../firebase"
+import { firestore } from "../../firebase"
 
 export const ProductContext = createContext()
 

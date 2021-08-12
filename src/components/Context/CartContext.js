@@ -3,7 +3,7 @@ import React, {useState, useEffect, createContext, useContext} from 'react'
 import {useProductContext} from "../Context/ProductContext"
 
 import firebase from "firebase/app";
-import { firestore } from "../../../firebase"
+import { firestore } from "../../firebase"
 
 
 // N° de productos seleccionados & Item seleccionado

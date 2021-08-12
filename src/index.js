@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from './reportWebVitals';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
-import App from './ui/layout/App';
+import App from './components/App.jsx';
 import './index.css';
 
 ReactDOM.render(

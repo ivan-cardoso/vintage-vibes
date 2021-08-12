@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className="container nav--container ">
                 <Navbar.Brand href="#home">
                     <NavLink className="navbar-brand padding--nav" to="/" exact >
-                        <h1 className="navbar--logo">RIBEREÑO</h1>
+                        <h1 className="navbar--logo">Vv</h1>
                     </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="margin--nav"/>
@@ -27,7 +27,7 @@ const NavBar = () => {
                         </Nav.Link>
 
                         <NavLink className="nav-link" to="/productos" >
-                            <NavDropdown title="productos" id="basic-nav-dropdown"  >
+                            <NavDropdown title="products" id="basic-nav-dropdown"  >
                                 <NavDropdown.Item >
                                     <NavLink className="navbar--items__estilos" to="/productos/billeteras">billeteras</NavLink>
                                 </NavDropdown.Item>
@@ -52,12 +52,12 @@ const NavBar = () => {
                         </NavLink>
 
                         <Nav.Link href="#nosotros">
-                            <NavLink className="nav-link" to="/nosotros" >nosotros</NavLink>
+                            <NavLink className="nav-link" to="/nosotros" >about</NavLink>
                         </Nav.Link>
 
                         <Nav.Link href="#contacto">
                             <NavLink className="nav-link" to="/contacto" >
-                                contacto
+                                contact
                         </NavLink>
                         </Nav.Link>
                     </Nav>
