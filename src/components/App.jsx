@@ -1,9 +1,9 @@
 import './App.css';
 
 import NavBar from "./NavBar/NavBar";
-import ItemListContainer from "./ItemListContainer/ItemListContainer";
+import ItemListContainer from "./ItemListContainer/ItemListContainer.jsx";
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
-import Principal from "./Principal/Principal"
+import Principal from "./Principal/Principal.jsx"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 import CartProvider from "./Context/CartContext"
@@ -12,7 +12,7 @@ import Checkout from './Checkout/Checkout';
 import About from './About/About';
 import Contact from './Contact/Contact';
 
-import Footer from "./Footer/Footer"
+import Footer from "./Footer/Footer.jsx"
 
 
 

@@ -1,5 +1,5 @@
 import React from "react"
-import Carrousel from "../Carrousel/Carrousel"
+import Carrousel from "../Carrousel/Carrousel.jsx"
 import "./Principal.css"
 
 
@@ -10,13 +10,13 @@ const Principal = () =>{
                     <div className="row">
                         <div className="col-12 col-md-6 principal--title">
                             <p className="principal--title__estilos">
-                                Somos <span className="title--brand" >Ribereño Cueros_</span>
+                                We are <span className="title--brand" >Vintage Vibes_</span>
                             </p>
                             <p className="principal--title__estilos">
-                                Artículos Personalizables
+                                New & Recycled 
                             </p>
                             <p className="principal--title__estilos">
-                                100% Hecho a Mano
+                                Products
                             </p>
                         </div>
                         

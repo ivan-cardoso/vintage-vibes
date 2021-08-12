@@ -11,7 +11,7 @@ function Footer() {
 
                     <div className="row">
                         <div className="col-12 col-md-6" >
-                            <p className="footer--text">Ribereño Cueros © 2021 </p>
+                            <p className="footer--text">Vintage Vibes © 2021 </p>
 
                             <NavLink to="/" exact className="footer--link">
                                 <p className="footer--text">
@@ -20,25 +20,25 @@ function Footer() {
                             </NavLink>
                             <NavLink to="/productos" className="footer--link">
                                 <p className="footer--text">
-                                    Productos
+                                    Products
                             </p>
                             </NavLink>
                             <NavLink to="/nosotros" className="footer--link">
                                 <p className="footer--text">
-                                    Nosotros
+                                    About
                             </p>
                             </NavLink>
                             <NavLink to="/contacto" className="footer--link">
                                 <p className="footer--text">
-                                    Contacto
+                                    Contact
                             </p>
                             </NavLink>
                         </div >
 
                         <div className="col-12 col-md-6" >
-                            <p className="footer--text">Desarrollo</p>
+                            <p className="footer--text">Developer</p>
                             <p className="footer--text footer--autor">Ivan Cardoso</p>
-                            <p className="footer--text">Contacto</p>
+                            <p className="footer--text">Contact</p>
 
                             <div className="d-flex ">
                                 <a href="https://www.linkedin.com/in/ivan--cardoso/" target="_blank" >

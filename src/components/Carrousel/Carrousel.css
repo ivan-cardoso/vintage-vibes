@@ -12,7 +12,7 @@
     z-index: 2;
 }
  .carrousel--products__estilos img {
-     z-index: 2;
+    z-index: 2;
     height: 20rem;
 } 
  
@@ -24,6 +24,14 @@
 }
 .carousel--img{
     width: 15rem;
+}
+
+.carousel--imgBig{
+    width: 20rem;
+}
+.carousel--imgMed{
+    width: 20rem;
+    margin-top: 3rem;
 }
 .carousel-indicators{
     display: none;

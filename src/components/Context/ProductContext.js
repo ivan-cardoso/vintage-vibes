@@ -19,10 +19,7 @@ export default function ProductProvider({ children }) {
     const categoryParams = (catParams) => {
         setCategoryId(catParams)
     }
-
     
-
-
     const [itemsFirebase, setItemsFirebase] = useState([])
     const [itemDetail, setItemDetail] = useState([])
 

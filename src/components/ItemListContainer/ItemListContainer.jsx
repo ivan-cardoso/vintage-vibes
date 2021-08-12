@@ -1,7 +1,7 @@
 import React from "react"
 import "./ItemListContainer.css"
 
-import ItemList from "./ItemList/ItemList"
+import ItemList from "./ItemList/ItemList.jsx"
 import { useParams } from "react-router-dom"
 
 import {useProductContext} from "../Context/ProductContext"
@@ -19,9 +19,8 @@ const ItemListContainer = ({ titulo }) => {
         <>
             <section className="itemListContainer--content">
                 <div className="container">
-                    <h2 className="section--subtitle" >Nuestros <span className="green" >Productos_</span></h2>
+                    <h2 className="section--subtitle" >Our <span className="green" >Products_</span></h2>
                     <div className="row section--productos"> 
-
                         <ItemList details={itemsFirebase} />
                     </div>
                 </div>
