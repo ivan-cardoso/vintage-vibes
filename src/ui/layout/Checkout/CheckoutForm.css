@@ -1,0 +1,35 @@
+.modal-header{
+    border: none;
+}
+.modal-content{
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+}
+
+.modal{
+    padding-left: 0;
+}
+
+.form--title{
+    font-size: 1.7rem;
+}
+
+.form--label{
+    color: #797979;
+    margin-bottom: 0;
+}
+
+.form--input{
+    padding: 1.3rem 1rem;
+    margin: .4rem 0 ;
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+    transition: all 1s;
+    font-weight: 700;
+    color: #212529;
+}
+.form--input:focus{
+    box-shadow: none;
+    border-color: #67ad7c;
+    transition: all .5s;
+}

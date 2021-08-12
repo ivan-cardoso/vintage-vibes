@@ -1,0 +1,42 @@
+[
+    {
+        "id": "001",
+        "title": "Billetera L",
+        "price": 2500,
+        "image":"/img/recort.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet natus, at laboriosam tenetur molestiae rerum cupiditate corrupti enim autem optio minima.",
+        "size": "20cm x 15cm x 10cm"
+    },
+    {
+        "id": "002",
+        "title": "Tarjetero Focus",
+        "price": 2000,
+        "image": "/img/recort.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet natus, at laboriosam tenetur molestiae rerum cupiditate corrupti enim autem optio minima.",
+        "size": "15cm x 10cm"
+    },
+    {
+        "id": "003",
+        "title": "Bag Children",
+        "price": 5000,
+        "image": "/img/recort.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet natus, at laboriosam tenetur molestiae rerum cupiditate corrupti enim autem optio minima.",
+        "size": "50cm x 40cm x 20cm"
+    },
+    {
+        "id": "004",
+        "title": "Matera Yorugüa",
+        "price": 2500,
+        "image": "/img/recort.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet natus, at laboriosam tenetur molestiae rerum cupiditate corrupti enim autem optio minima.",
+        "size": "40cm x 20cm"
+    },
+    {
+        "id": "005",
+        "title": "Matera 4x4",
+        "price": 3000,
+        "image": "/img/recort.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet natus, at laboriosam tenetur molestiae rerum cupiditate corrupti enim autem optio minima.",
+        "size": "20cm x 20cm x 20cm"
+    }
+]

@@ -1,0 +1,16 @@
+.itemListContainer--content{
+    background-color:#fff1ff;
+}
+.productos--title{
+    padding: 2.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.itemListContainer--producto{
+    height: 20rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color:#ffffffad;
+}

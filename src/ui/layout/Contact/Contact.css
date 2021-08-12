@@ -1,0 +1,7 @@
+@media (min-width:993px){
+    
+    .contact--form{
+        flex-direction: column;
+        width: 60%;
+    }
+}

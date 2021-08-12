@@ -1,0 +1,31 @@
+.principal--content{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff1ff;
+}
+
+.principal--title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: .5rem;
+    text-align: center;
+}
+.principal--title__estilos{
+    margin-bottom: 1rem;
+    color: #4d486f ;
+}
+.title--brand{
+    color: #67ad7c ;
+}
+
+@media  (min-width:720px){
+    .principal--title{
+        height: 80vh;
+        padding-top: 3.5rem;
+        font-size: 2.5rem;
+        text-align: start;
+    }
+}

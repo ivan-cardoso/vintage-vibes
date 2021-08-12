@@ -1,0 +1,43 @@
+ .carrousel--products__estilos{
+    display: flex;
+    justify-content: center;
+   
+} 
+.background--products{
+    background-color: #fff9e1;
+    position: absolute;
+    width: 78%;
+    height: 150%;
+    top: -9rem;
+    z-index: 2;
+}
+ .carrousel--products__estilos img {
+     z-index: 2;
+    height: 20rem;
+} 
+ 
+.carrousel--products__info__desktop{
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+}
+.carousel--img{
+    width: 15rem;
+}
+.carousel-indicators{
+    display: none;
+}
+
+
+
+@media (min-width:759px){
+    .carousel--img{
+        width: 22rem;
+    }
+}
+@media (min-width:1024px){
+    .carousel--img{
+        width: 25rem;
+    }
+}

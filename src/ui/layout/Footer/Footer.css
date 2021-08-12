@@ -1,0 +1,53 @@
+.footer--container{
+    background-color: #1b1927;
+    padding: 3rem 0 ;
+    margin-top: 2rem;
+}
+.footer--text{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+.footer--text:hover{
+    color: #67ad7c;
+    text-decoration: none;
+}
+.footer--link:hover{
+    text-decoration: none;
+}
+.footer--autor{
+    color: #67ad7c;
+    font-size: 1.1rem;
+}
+.footer--icon--container{
+    background-color: transparent;
+    padding: .7rem;
+    height: fit-content;
+    margin-right:.5rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s;
+}
+.footer--icon--container:hover{
+    background-color: #ffc5ff;
+    transition: all .4s;
+}
+
+.footer--icon{
+    fill: white;
+    transition: all .6s;
+}
+
+.footer--icon:hover{
+    transition: all .2s;
+    fill: #1b1927 ;
+}
+
+@media (min-width:550px){
+    .footer--container{
+        margin-top: 0;
+    }
+}

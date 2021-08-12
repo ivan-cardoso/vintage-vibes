@@ -1,0 +1,24 @@
+.cart--icon{
+    position: relative;
+}
+
+.navitem--cartwidget{
+    width: 1.3rem;
+}
+.cartwidget-count{
+    position: absolute;
+    width: 1rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: #4d486f;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    top: 2.2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+}
+
+.bi-cart3:hover{
+    color: #67ad7c ;
+}

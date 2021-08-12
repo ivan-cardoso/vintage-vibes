@@ -1,0 +1,50 @@
+.card--items{
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+}
+.empty--cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+.bi-cart3{
+    transition: .8s;
+}
+.cart--icon:hover{
+    transition: .5s;
+    color: #4d486f;
+}
+.empty--cart--title{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.card--checkout{
+    border: 2px solid #e2e2e2;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.card--checkout--title{
+    margin-top: 1rem;
+}
+
+.total--price{
+    font-size: 1.3rem;
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.total--number{
+    font-weight: 800;
+}
+
+@media (min-width:1150px){
+    .card--items{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}

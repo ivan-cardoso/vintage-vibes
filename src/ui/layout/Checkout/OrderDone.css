@@ -1,0 +1,19 @@
+.modal--title{
+    text-align: center;
+}
+.orderDone--title{
+    font-size:2.2rem;
+}
+.orderDone--thanks{
+    font-size:1.2rem ;
+    color: #67ad7c ;
+    margin: 1rem 0 ;
+}
+.orderDone--text{
+    font-size:1.2rem ;
+    color: #212529 ;
+    margin: 1rem 0 ;
+}
+.orderDone--id{
+    font-weight: 800;
+}

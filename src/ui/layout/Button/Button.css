@@ -1,0 +1,42 @@
+.button{
+    padding: 0.6rem 0.8rem;
+    margin: .5rem 0 ;
+    border-radius: 30px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    border-color:transparent;
+    transition: all .5s;
+}
+.button:focus{
+    outline: none;
+}
+
+
+.color-light{
+    background-color: #ffd9fe;
+    font-weight: 600;
+    color: #212529;
+}
+.color-light:hover{
+    transition: all .5s;
+    background-color:transparent;
+    border-color: #4d486f;
+}
+
+
+.color-dark{
+    font-weight: 500;
+    background-color: #4d486f;
+    color:#ffffff;
+}
+.color-dark:hover{
+    color:#4d486f;
+    transition: all .5s;
+    background-color:transparent;
+    border-color: #4d486f;
+}
+
+.btn--complete{
+    width: 100%;
+}
+

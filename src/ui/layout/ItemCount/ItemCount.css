@@ -1,0 +1,32 @@
+.ItemCount--section{
+    border: solid 1.5px rgb(72, 132, 172);
+    border-radius: 5px;
+}
+
+.ItemCount--button{
+    width: 3rem;
+    color: rgb(87, 83, 83);
+}
+
+.count--container{
+    justify-content: space-between;
+    align-items: center;
+    margin-top:.5rem;
+    padding: 0.8rem 0.3rem;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 30px;
+    border: 1px solid #9c9ea0;
+}
+
+.count--number{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.count--button{
+    background-color: transparent;
+    border: none;
+}
+.count--button:focus{
+    outline: none;
+}
