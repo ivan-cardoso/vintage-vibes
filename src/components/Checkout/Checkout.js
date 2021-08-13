@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useCartContext } from "../Context/CartContext"
 import { useProductContext } from "../Context/ProductContext"
@@ -11,11 +11,16 @@ import "./Checkout.css"
 import ButtonDark from "../Button/ButtonDark"
 import CompleteDark from "../Button/CompleteDark"
 import CompleteLight from "../Button/CompleteLight"
+import scrollTop from '../../utils/scrollTop'
 
 function Checkout() {
     const { item } = useProductContext()
     const { itemAdded, cleanProduct, cleanCart, totalCart, showForm, handleShow, orderId, orderDone } = useCartContext()
 
+
+    useEffect(() => {
+        scrollTop()  
+    }, [])
 
     return (
 

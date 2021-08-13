@@ -1,13 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
+import scrollTop from "../../../utils/scrollTop.js"
 
 import Item from "./Item/Item.jsx"
 
 const ItemList = ({ details }) => {
 
+    useEffect(() => {
+        scrollTop()  
+    }, [])
+
     return (
         <>
             {details.map((item) => {
-                    return <Item key={item.id} id={item.id} title={item.title} price={item.price} image={item.image} />
+                    return <Item  item={item}/>
             })}  
         </>
     )

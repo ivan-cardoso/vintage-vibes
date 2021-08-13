@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./ItemListContainer.css"
 
 import ItemList from "./ItemList/ItemList.jsx"
@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom"
 import {Spinner} from "react-bootstrap"
 
 import {useProductContext} from "../Context/ProductContext"
+import scrollTop from "../../utils/scrollTop"
+
 
 
 const ItemListContainer = ({ titulo }) => {
@@ -15,6 +17,10 @@ const ItemListContainer = ({ titulo }) => {
     const {itemsFirebase, setItemsFirebase, categoryParams} = useProductContext()
     
     categoryParams(id)
+
+    useEffect(() => {
+        scrollTop()  
+    }, [])
 
     return (
         <>

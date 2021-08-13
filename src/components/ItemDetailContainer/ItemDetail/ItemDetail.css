@@ -22,14 +22,14 @@
 }
 
 .itemDetail--img{
-    
     width: 100%;
     height: auto;
-
     border-radius: 30px;
-
 }
-
+.itemDetail--img--vinyl{
+    width: 100%;
+    height: auto;
+}
 .details--container{
     display: flex;
     flex-direction: column;
@@ -66,5 +66,8 @@
         width: 70%;
         height: -webkit-fill-available;
     }
-    
+    .itemDetail--img--vinyl{
+        width: 70%;
+        height: -webkit-fill-available;
+    }
 }

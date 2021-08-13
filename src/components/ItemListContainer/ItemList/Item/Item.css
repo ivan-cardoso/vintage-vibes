@@ -28,6 +28,9 @@
     width: 55%;
     border-radius: 20px;
 }
+.vinyl--img{
+    width: 55%;
+}
 
 .item--title{
     margin-top: .8rem;

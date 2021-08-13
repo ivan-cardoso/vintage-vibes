@@ -1,9 +1,15 @@
-import React from "react"
+import React, {useEffect} from "react"
+import scrollTop from "../../utils/scrollTop.js"
 import Carrousel from "../Carrousel/Carrousel.jsx"
 import "./Principal.css"
 
 
 const Principal = () =>{
+
+    useEffect(() => {
+        scrollTop()  
+    }, [])
+
     return(
         <div className="principal--content">
                 <div className="container">

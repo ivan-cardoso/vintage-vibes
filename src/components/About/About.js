@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import scrollTop from '../../utils/scrollTop'
 import "./About.css"
 
 function About() {
+
+    useEffect(() => {
+        scrollTop()  
+    }, [])
+
     return (
         <>
             <div className="about--container">

@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail/ItemDetail.jsx'
 import { useParams } from "react-router-dom"
 
 import { useProductContext } from "../Context/ProductContext"
+import scrollTop from "../../utils/scrollTop.js"
 
 const ItemDetailContainer = () => {
 
@@ -11,7 +12,9 @@ const ItemDetailContainer = () => {
     const { params } = useProductContext()
     params(id)
 
-    
+    useEffect(() => {
+        scrollTop()  
+    }, [])
     return (
         <ItemDetail />
     )

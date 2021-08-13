@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Form } from "react-bootstrap"
+import scrollTop from '../../utils/scrollTop'
 import CompleteDark from "../Button/CompleteDark"
 import "./Contact.css"
 
 function Contact() {
+
+  useEffect(() => {
+    scrollTop()  
+  }, [])
+
   return (
     <>
       <div className="container ">

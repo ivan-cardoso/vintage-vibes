@@ -1,15 +1,26 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./Item.css"
 import { NavLink } from "react-router-dom"
 import Button from "../../../Button/Button"
+import scrollTop from "../../../../utils/scrollTop"
 
-const Item = ({ id, title, price, image }) => {
+const Item = ({ item }) => {
+
+    const {id, title, price, image} = item 
+
+
+    useEffect(() => {
+        scrollTop()  
+    }, [])
 
     return  <div className="col-12 col-sm-6 col-lg-4  itemListContainer--carta">
                 <div className="itemListContainer--producto" >
                     <NavLink to={`/item/${id}`}>
                         <div className="listContainer--img">
-                            <img className="item--img" src={image} />
+                            {item.artist ? 
+                                <img className="vinyl--img" src={image} /> 
+                            :<img className="item--img" src={image} />
+                            }
                         </div>
                     </NavLink>
                     <h3 className="item--title"> {title} </h3>

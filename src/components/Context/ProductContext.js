@@ -34,23 +34,23 @@ export default function ProductProvider({ children }) {
         const query = itemsCollection.get()
         query
             .then((res) => {
-                console.log("ID", categoryId)
                 const productsFirebase = []
                 res.docs.forEach(doc => {
                     productsFirebase.push({ id: doc.id, ...doc.data() })
                 })
-
                 if (categories.includes(categoryId)) {
                     setItemsFirebase([...productsFirebase.filter(item => item.category === categoryId)])
                 } else if (!categoryId) {
-                    
                     setItemsFirebase(productsFirebase)
                 }else{
                     history.push("/")
                 }
 
-                if (id) {
-                    setItemDetail([...productsFirebase.filter(item => item.id === id)][0])
+                const includesId = [...productsFirebase.filter(item => item.id === id)][0]
+                if (includesId) {
+                    setItemDetail(includesId)
+                }else{
+                    setItemDetail(["err"])
                 }
             })
             .catch((err) => {
