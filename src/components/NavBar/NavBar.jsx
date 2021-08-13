@@ -7,7 +7,20 @@ import categories from "../../utils/categories"
 
 const NavBar = () => {
     
-    
+    const closeDropdown = () =>{
+        const dropDown = document.getElementById("basic-nav-dropdown")
+        dropDown.setAttribute("aria-expanded", "false")
+        document.querySelector(".dropdown").classList.remove("show");
+        document.querySelector(".dropdown-menu").classList.remove("show");
+    }
+
+    const openDropdown = ()=>{
+        const dropDown = document.getElementById("basic-nav-dropdown")
+        dropDown.setAttribute("aria-expanded", "true")
+        document.querySelector(".dropdown").classList.add("show")
+        document.querySelector(".dropdown-menu").classList.add("show")
+    }   
+
     return (
         <Navbar expand="lg" className="navbar--estilos" sticky="top" >
             <div className="container nav--container ">
@@ -25,10 +38,10 @@ const NavBar = () => {
                         </Nav.Link>
 
                         <div className="nav-link">
-                            <NavDropdown title="products" id="basic-nav-dropdown"  >
+                            <NavDropdown title="products" id="basic-nav-dropdown"  /*onClick={()=> openDropdown()}*/ >
                                 {categories.map((category)=>{
                                     return (
-                                        <Link to={`/productos/${category}`}>
+                                        <Link to={`/productos/${category}`} onClick={()=> closeDropdown()}>
                                             {/* <div> */}
                                                 <p className="navbar--items__estilos" >{category}</p>
                                             {/* </div> */}
