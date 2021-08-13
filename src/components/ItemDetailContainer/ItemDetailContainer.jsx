@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import ItemDetail from './ItemDetail/ItemDetail'
+import ItemDetail from './ItemDetail/ItemDetail.jsx'
 import { useParams } from "react-router-dom"
 
 import { useProductContext } from "../Context/ProductContext"

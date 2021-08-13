@@ -9,17 +9,23 @@ const NavBar = () => {
     
     const closeDropdown = () =>{
         const dropDown = document.getElementById("basic-nav-dropdown")
-        dropDown.setAttribute("aria-expanded", "false")
+        dropDown.addEventListener("click", (e)=>{
+            e.preventDefault() 
+            dropDown.setAttribute("aria-expanded", "false")
+        })
         document.querySelector(".dropdown").classList.remove("show");
         document.querySelector(".dropdown-menu").classList.remove("show");
     }
 
-    const openDropdown = ()=>{
-        const dropDown = document.getElementById("basic-nav-dropdown")
-        dropDown.setAttribute("aria-expanded", "true")
-        document.querySelector(".dropdown").classList.add("show")
-        document.querySelector(".dropdown-menu").classList.add("show")
-    }   
+    // const openDropdown = (e)=>{
+    //     e.stopPropagation()
+    //     const dropDown = document.getElementById("basic-nav-dropdown")
+    //     dropDown.setAttribute("aria-expanded", "true")
+    //     const classDropdown = document.getElementsByClassName(".dropdown") 
+    //     classDropdown && classDropdown.classList.add("show")
+    //     const classDropdownMenu = document.getElementsByClassName(".dropdown-menu")
+    //     classDropdownMenu.classList.add("show")
+    // }   
 
     return (
         <Navbar expand="lg" className="navbar--estilos" sticky="top" >
@@ -41,7 +47,9 @@ const NavBar = () => {
                             <NavDropdown title="products" id="basic-nav-dropdown"  /*onClick={()=> openDropdown()}*/ >
                                 {categories.map((category)=>{
                                     return (
-                                        <Link to={`/productos/${category}`} onClick={()=> closeDropdown()}>
+                                        <Link to={`/productos/${category}`} 
+                                            // onClick={closeDropdown}
+                                        >
                                             {/* <div> */}
                                                 <p className="navbar--items__estilos" >{category}</p>
                                             {/* </div> */}
@@ -49,7 +57,13 @@ const NavBar = () => {
                                     )
                                 })}
 
-                                <NavLink className="navbar--items__estilos" to="/productos">ver todos</NavLink>
+                                <NavLink 
+                                    className="navbar--items__estilos" 
+                                    to="/productos"
+                                    // onClick={()=> closeDropdown()}
+                                    >
+                                        ver todos
+                                </NavLink>
                                 
 
                             </NavDropdown>

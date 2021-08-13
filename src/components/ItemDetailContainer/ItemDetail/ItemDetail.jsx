@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./ItemDetail.css"
-import AddCart from '../../AddCart/AddCart'
-import ItemCount from "../../ItemCount/ItemCount"
+import AddCart from '../../AddCart/AddCart.jsx'
+import ItemCount from "../../ItemCount/ItemCount.jsx"
 import CheckoutBtn from "./ChekoutBtn/CheckoutBtn"
 
 
@@ -14,6 +14,11 @@ const ItemDetail = () => {
 
     const {compra, countAdded, itemAdded, getCount, addProduct} = useCartContext()
     const {itemsFirebase, itemDetail} = useProductContext()
+    const [showAdd, setShowAdd] = useState(true)
+
+    const handleShowAdd = () =>{
+        setShowAdd(false)
+    }
 
     return (
         <>
@@ -33,10 +38,14 @@ const ItemDetail = () => {
                                 <h3 className="itemDetail--title"> {itemDetail.title} </h3>
                                 <p> {itemDetail.description} </p>
                                 <p className="itemDetail--price"> $ {itemDetail.price} </p>
-                                <p> Medidas: {itemDetail.size} </p>
+                                {itemDetail.artist && <p>{itemDetail.artist}</p>}
+                                {itemDetail.size && <p>{itemDetail.size} </p>}
+                                {showAdd && 
+                                    <div onClick={()=> handleShowAdd()} >
+                                        <AddCart/> 
+                                    </div>
+                                }
                                 
-                                <AddCart/>
-
                                 {!compra && <ItemCount initial={1} stock={10}/> }
                                 
 
@@ -54,3 +63,16 @@ const ItemDetail = () => {
 }
 
 export default ItemDetail 
+
+
+/**
+    {
+        category : "",
+        description : "Vintage Vibes is the home of vintage mens and womens clothing, vintage sportswear, vintage dresses, vintage sweatshirts, vintage t-shirts and vintage jeans.",
+        image : "",
+        price : 0,
+        size : "L",
+        stock : 10,
+        title : ""
+    }
+ */

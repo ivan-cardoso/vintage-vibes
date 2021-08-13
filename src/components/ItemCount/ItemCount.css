@@ -11,7 +11,7 @@
 .count--container{
     justify-content: space-between;
     align-items: center;
-    margin-top:.5rem;
+    /* margin-top:5rem; */
     padding: 0.8rem 0.3rem;
     width: 9rem;
     height: 3rem;

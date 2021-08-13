@@ -1,3 +1,3 @@
-const categories = ["jackets", "bolsos", "billeteras", "materas"]
+const categories = ["jackets", "shirts", "cameras", "vinyls"]
 
 export default categories
