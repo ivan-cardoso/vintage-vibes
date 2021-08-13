@@ -17,7 +17,7 @@ const Item = ({ id, title, price, image }) => {
 
                     <div>
                         <NavLink to={`/item/${id}`}>
-                            <Button text="Ver producto" />
+                            <Button text="View product" />
                         </NavLink>
                     </div>
                 </div>

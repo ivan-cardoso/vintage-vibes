@@ -1,10 +1,10 @@
 import './App.css';
 
-import NavBar from "./NavBar/NavBar";
+import NavBar from "./NavBar/NavBar.jsx";
 import ItemListContainer from "./ItemListContainer/ItemListContainer.jsx";
-import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer.jsx";
 import Principal from "./Principal/Principal.jsx"
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 
 import CartProvider from "./Context/CartContext"
 import ProductProvider from './Context/ProductContext';
@@ -33,26 +33,27 @@ function App() {
               <ItemListContainer />
             </Route>
 
-            <Route path="/productos/:id"  >
+            <Route exact path="/productos/:id"  >
                 <ItemListContainer/> 
             </Route>
 
-            <Route path="/item/:id">
+            <Route exact path="/item/:id">
               <ItemDetailContainer />
             </Route>
 
-            <Route path="/checkout/">
+            <Route exact path="/checkout/">
               <Checkout />
             </Route>
 
-            <Route path="/nosotros/">
+            <Route exact path="/nosotros/">
               <About/>
             </Route>
 
-            <Route path="/contacto/">
+            <Route exact path="/contacto/">
               <Contact/>
             </Route>
-    
+
+            <Redirect to={"/"} />
           </Switch>
 
         </CartProvider>

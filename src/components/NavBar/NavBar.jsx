@@ -2,13 +2,11 @@ import React from "react";
 import "./navBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
+import categories from "../../utils/categories"
 
 const NavBar = () => {
     
-    const showNav = () =>{
-
-    } 
     
     return (
         <Navbar expand="lg" className="navbar--estilos" sticky="top" >
@@ -26,30 +24,23 @@ const NavBar = () => {
                             <NavLink className="nav-link" to="/" exact >home</NavLink>
                         </Nav.Link>
 
-                        <NavLink className="nav-link" to="/productos" >
+                        <div className="nav-link">
                             <NavDropdown title="products" id="basic-nav-dropdown"  >
-                                <NavDropdown.Item >
-                                    <NavLink className="navbar--items__estilos" to="/productos/billeteras">billeteras</NavLink>
-                                </NavDropdown.Item>
+                                {categories.map((category)=>{
+                                    return (
+                                        <Link to={`/productos/${category}`}>
+                                            {/* <div> */}
+                                                <p className="navbar--items__estilos" >{category}</p>
+                                            {/* </div> */}
+                                        </Link>
+                                    )
+                                })}
 
-                                <NavDropdown.Item >
-                                    <NavLink className="navbar--items__estilos" to="/productos/bolsos">bolsos </NavLink>
-                                </NavDropdown.Item>
-
-                                <NavDropdown.Item >
-                                    <NavLink className="navbar--items__estilos" to="/productos/materas"> materas</NavLink>
-                                </NavDropdown.Item>
-
-                                <NavDropdown.Item >
-                                    <NavLink className="navbar--items__estilos" to="/productos/accesorios">accesorios</NavLink>
-                                </NavDropdown.Item>
-
-                                <NavDropdown.Item >
-                                    <NavLink className="navbar--items__estilos" to="/productos">ver todos</NavLink>
-                                </NavDropdown.Item>
+                                <NavLink className="navbar--items__estilos" to="/productos">ver todos</NavLink>
+                                
 
                             </NavDropdown>
-                        </NavLink>
+                        </div>
 
                         <Nav.Link href="#nosotros">
                             <NavLink className="nav-link" to="/nosotros" >about</NavLink>

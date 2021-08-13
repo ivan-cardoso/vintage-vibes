@@ -6,6 +6,7 @@
 .nav--container{
     align-items: center;
 }
+
 .navbar--logo{
     font-size: 2rem;
     color: rgb(34, 33, 33);
@@ -20,6 +21,7 @@
     font-size:1.15rem;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
+    padding: 1.5rem;
 }
 .nav-link:hover{
     color: #67ad7c !important;
@@ -30,9 +32,15 @@
 
 .navbar--items__estilos{
     color: black;
+    width: 100%;
+    height: 100%;
+    margin: .1rem;
+}
+
+a:link{
+    text-decoration: none;
 }
 .navbar--items__estilos:hover{
-    text-decoration: none;
     color:grey;
 }
 a:active{
@@ -80,6 +88,9 @@ a:active{
     }
     .dropdown-menu.show {
         background-color: #4d486f;
+        padding: .4rem 1.1rem;
+        display: flex;
+        flex-direction: column;
     }
     .navbar--items__estilos{
         color: #fff1ff;
