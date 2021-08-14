@@ -11,13 +11,26 @@
 .about--section--img{
     padding-bottom: 3rem;
 }
-.about--img--container{
-    max-height: 100vh;
+.about--img--background{
+    height: 20rem;
     border-radius: 40px;
+    width: 100%;
+    background-image: url("https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/11/b-boys-breakdancers.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.about--img--container{
+    /* height: 20rem; */
+    border-radius: 40px;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 .about--img{
     width: 100%;
     border-radius: 40px;
+    height: 100%;
 }
 
 .white--bg{
@@ -41,7 +54,12 @@
     .about--text{
         margin-left: 2rem;
     }
-    
+    .about--img--container{
+        height: auto;
+    }
+    .about--img--background{
+        height: 85vh;
+    }
 }
 @media (min-width:995px){
     .bi-circle-fill{
