@@ -38,9 +38,8 @@ function Footer() {
                         <div className="col-12 col-md-6" >
                             <p className="footer--text">Developer</p>
                             <p className="footer--text footer--autor">Ivan Cardoso</p>
-                            <p className="footer--text">Contact</p>
 
-                            <div className="d-flex ">
+                            <div className="d-flex">
                                 <a href="https://www.linkedin.com/in/ivan--cardoso/" target="_blank" >
                                     <div className="footer--icon--container ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin footer--icon" viewBox="0 0 16 16">

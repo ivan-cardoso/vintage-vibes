@@ -15,10 +15,10 @@ function CartItem() {
 
     return (
         <>
+            <div  className="col-12  col-xl-9 p-0" >
             {itemAdded.map(item => {
                 return (
-                    <div key={item.id} className="col-12  col-xl-9 mb-4 " >
-                        <div className="row itemAdded--card  ">
+                        <div key={item.id} className="row itemAdded--card  ">
                             <div className="col-12 col-md-3 itemAdded--img--container" >
                                 <img src={item.image}  className="itemAdded--img"  />
                             </div>
@@ -52,9 +52,9 @@ function CartItem() {
                             </div>
 
                         </div>
-                    </div>
                 )
             })}
+            </div>
         </>
     )
 }

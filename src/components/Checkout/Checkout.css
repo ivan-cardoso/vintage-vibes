@@ -1,6 +1,7 @@
 .card--items{
     justify-content: flex-end;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
     margin-bottom: 2rem;
 }
 .empty--cart{
@@ -26,6 +27,7 @@
     border: 2px solid #e2e2e2;
     border-radius: 20px;
     padding: 1.5rem;
+    margin-top: 1rem;
 }
 
 .card--checkout--title{
@@ -44,7 +46,12 @@
 
 @media (min-width:1150px){
     .card--items{
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: flex-end;
+    }
+    .card--checkout{
+        max-height: 33rem;
+        position: sticky;
+        top: 9rem;
     }
 }

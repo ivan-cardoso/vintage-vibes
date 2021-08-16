@@ -8,7 +8,7 @@ import { BrowserRouter, Switch, Route, Redirect, useLocation } from "react-route
 
 import CartProvider from "./Context/CartContext"
 import ProductProvider from './Context/ProductContext';
-import Checkout from './Checkout/Checkout';
+import Checkout from './Checkout/Checkout.jsx';
 import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 
