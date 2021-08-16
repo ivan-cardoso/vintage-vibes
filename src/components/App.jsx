@@ -10,7 +10,7 @@ import CartProvider from "./Context/CartContext"
 import ProductProvider from './Context/ProductContext';
 import Checkout from './Checkout/Checkout';
 import About from './About/About.jsx';
-import Contact from './Contact/Contact';
+import Contact from './Contact/Contact.jsx';
 
 import Footer from "./Footer/Footer.jsx"
 import scrollTop from "../utils/scrollTop"
