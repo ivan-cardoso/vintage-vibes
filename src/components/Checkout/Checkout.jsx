@@ -4,7 +4,7 @@ import { useCartContext } from "../Context/CartContext"
 import { useProductContext } from "../Context/ProductContext"
 import CartItem from './CartItem.jsx'
 
-import CheckoutForm from './CheckoutForm'
+import CheckoutForm from './CheckoutForm.jsx'
 import OrderDone from "./OrderDone"
 import "./Checkout.css"
 
@@ -46,14 +46,14 @@ function Checkout() {
                         <div className="col-12 col-xl-3 card--checkout " >
                             <h4 className="card--checkout--title" >Total cart</h4>
 
-                            <p className="total--price" >Total: <span className="total--number">${totalCart()} </span> </p>
+                            <p className="total--price" >Total: <span className="total--number">$ {totalCart()} </span> </p>
 
                             <div onClick={cleanCart} className="mt-4">
                                 <CompleteLight  text="Clear" />
                             </div> 
 
                             <div onClick={handleShow} className="mt-4">
-                                <CompleteDark  text="Buy"/>
+                                <CompleteDark  text="Buy now"/>
                             </div>  
 
                         </div>

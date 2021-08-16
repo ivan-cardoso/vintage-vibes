@@ -37,11 +37,11 @@ function CartItem() {
                                 </div>
 
                                 <div className="col-12 mt-3" >
-                                    <h4 className="itemAdded--price" >$ {item.price} </h4>
+                                    <h4 className="itemAdded--price" >U$D {item.price} </h4>
                                 </div>
 
                                 <div className="col-12 mt-3" >
-                                    <p className="itemAdded--count">Unidades {item.countAdded}</p>
+                                    <p className="itemAdded--count">{item.countAdded} Items </p>
                                     <div className="removeItem--mobile">
                                         <div onClick={() => removeItem(item)}>
                                             <ButtonClose/>
