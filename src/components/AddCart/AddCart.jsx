@@ -8,7 +8,7 @@ function AddCart() {
     
     return (
         <div onClick={addItem}>
-            <Button  text="Agregar a carrito"/>
+            <Button  text="Add to cart"/>
         </div>
     )
 }

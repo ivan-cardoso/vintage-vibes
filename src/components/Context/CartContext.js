@@ -2,6 +2,8 @@ import React, {useState, useEffect, createContext, useContext} from 'react'
 
 import {useProductContext} from "../Context/ProductContext"
 
+import {useHistory } from "react-router-dom"
+
 import firebase from "firebase/app";
 import { firestore } from "../../firebase"
 
@@ -14,7 +16,9 @@ export default function CartProvider ({children}){
     
     const {item, id, itemDetail} = useProductContext()
 
-    const [itemAdded, setItemAdded] = useState([])
+    const [itemAdded, setItemAdded] = useState(()=>
+        JSON.parse(window.localStorage.getItem("cartItems")) || []
+    )
     const [countAdded, setCountAdded] = useState(1)
     const [compra, setCompra] = useState(false)
 
@@ -22,16 +26,32 @@ export default function CartProvider ({children}){
         setCountAdded(numero);
     }
 
+    const history = useHistory()
+    
+    useEffect(()=> {
+        const myStorage = window.localStorage 
+        myStorage.setItem("cartItems", JSON.stringify(itemAdded))
+    },[itemAdded])
+    
+    
     function addItem (){
-        // Busco si existe el producto en el carrito
-        // Si existe le agrego al countAdded
-        const isInCart = itemAdded.find((p) => p.id === itemDetail.id)
+        // const localCart = []
+        // const cart = JSON.parse(myStorage.getItem("cartItems"))
+        // const item = localCart.find((e) => e.id === itemDetail.id)
         
+        
+        const isInCart = itemAdded.find((p) => p.id === itemDetail.id)
         if(isInCart){
-            isInCart.countAdded += countAdded
+            const add = isInCart.countAdded += countAdded
+            setItemAdded([...itemAdded])
         }else{
-            setItemAdded([...itemAdded, {...itemDetail, countAdded }]);  
+            setItemAdded([...itemAdded, {...itemDetail, countAdded }]);
+            // localCart.push([...itemAdded, {...itemDetail, countAdded }])  
         }
+        
+        // console.log("ITEM LOCAL", cart)
+        // console.log("ITEM", item.countAdded)
+        
         setCompra(true)
     }
     
@@ -45,7 +65,6 @@ export default function CartProvider ({children}){
             1
             );
             setItemAdded([...itemAdded])
-            console.log(itemAdded)
         };
 
     
@@ -119,6 +138,7 @@ export default function CartProvider ({children}){
         setShowOrderDone(false);
         setOrderId("")
         setItemAdded([])
+        history.push("/")
     } 
 
     const handleShowOrder = () => {

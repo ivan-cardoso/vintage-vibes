@@ -16,6 +16,7 @@ function CartItem() {
     return (
         <>
             <div  className="col-12  col-xl-9 p-0" >
+            
             {itemAdded.map(item => {
                 return (
                         <div key={item.id} className="row itemAdded--card  ">

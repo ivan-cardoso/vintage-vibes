@@ -5,7 +5,7 @@ import { useProductContext } from "../Context/ProductContext"
 import CartItem from './CartItem.jsx'
 
 import CheckoutForm from './CheckoutForm.jsx'
-import OrderDone from "./OrderDone"
+import OrderDone from "./OrderDone.jsx"
 import "./Checkout.css"
 
 import ButtonDark from "../Button/ButtonDark"
@@ -25,6 +25,7 @@ function Checkout() {
     return (
 
         <>
+            {console.log("ITEM ADDED", itemAdded)}
             <div className="container">
                 {itemAdded.length === 0 ? (
                     <div className="empty--cart">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./ItemDetail.css"
 import AddCart from '../../AddCart/AddCart.jsx'
 import ItemCount from "../../ItemCount/ItemCount.jsx"
-import CheckoutBtn from "./ChekoutBtn/CheckoutBtn"
+import CheckoutBtn from "./ChekoutBtn/CheckoutBtn.jsx"
 import {Spinner} from "react-bootstrap"
 
 import {useCartContext} from "../../Context/CartContext"

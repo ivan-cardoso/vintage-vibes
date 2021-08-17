@@ -24,13 +24,13 @@ function OrderDone() {
                 </Modal.Header>
 
                 <Modal.Body className="modal--title" >
-                    <h3 className="orderDone--title" >Compra realizada</h3>
-                    <p className="orderDone--thanks" >¡Gracias por tu compra!</p>
-                    <p className="orderDone--text" >En breve nos comunicaremos contigo mediante mail</p>
-                    <p className="orderDone--text" >El ID de tu compra es <span className="orderDone--id" > {orderId}</span></p>
+                    <h3 className="orderDone--title" >Vintage Vibes</h3>
+                    <p className="orderDone--thanks" >¡Thanks for buy!</p>
+                    <p className="orderDone--text" >Your order has been successfully processed</p>
+                    <p className="orderDone--text" >To follow your order use this ID<span className="orderDone--id" > {orderId}</span></p>
                    
                     <div  onClick={handleCloseOrder}>
-                        <Button  text="Volver" />
+                        <Button  text="Ok! Back home" />
                     </div>
 
                 </Modal.Body>

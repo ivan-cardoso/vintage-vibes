@@ -62,7 +62,7 @@ const NavBar = () => {
                                     to="/productos"
                                     // onClick={()=> closeDropdown()}
                                     >
-                                        ver todos
+                                        see all
                                 </NavLink>
                                 
 

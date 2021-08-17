@@ -11,7 +11,7 @@ function CheckoutBtn() {
        
             <>
                 <NavLink to="/checkout">
-                <ButtonDark  onClick={checkout(), totalCart} text="Finalizar Compra" ></ButtonDark>     
+                <ButtonDark  onClick={checkout(), totalCart} text="Buy now" ></ButtonDark>     
                 </NavLink>    
             </>
         
