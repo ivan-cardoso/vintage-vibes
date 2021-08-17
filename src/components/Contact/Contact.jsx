@@ -41,7 +41,6 @@ function Contact() {
         <h2 className="section--subtitle green mb-4" >Contact_</h2>
 
         <div className="d-flex justify-content-center mt-5">
-          {console.log("VALUES", values)}
           <Form className="contact--form" onSubmit={(e)=>handleSubmit(e)} >
             <Form.Group controlId="orderForm">
               <Form.Label className="form--label">Name *</Form.Label>

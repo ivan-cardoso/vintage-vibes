@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useCartContext } from "../Context/CartContext"
-import { useProductContext } from "../Context/ProductContext"
 import CartItem from './CartItem.jsx'
 
 import CheckoutForm from './CheckoutForm.jsx'
@@ -14,8 +13,7 @@ import CompleteLight from "../Button/CompleteLight.jsx"
 import scrollTop from '../../utils/scrollTop'
 
 function Checkout() {
-    const { item } = useProductContext()
-    const { itemAdded, cleanProduct, cleanCart, totalCart, showForm, handleShow, orderId, orderDone } = useCartContext()
+    const { itemAdded, cleanCart, totalCart, handleShow, orderId } = useCartContext()
 
 
     useEffect(() => {

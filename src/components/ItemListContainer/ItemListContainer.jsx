@@ -10,11 +10,11 @@ import scrollTop from "../../utils/scrollTop"
 
 
 
-const ItemListContainer = ({ titulo }) => {
+const ItemListContainer = () => {
     
     const { id } = useParams()
 
-    const {itemsFirebase, setItemsFirebase, categoryParams} = useProductContext()
+    const {itemsFirebase, categoryParams} = useProductContext()
     
     categoryParams(id)
 
@@ -26,7 +26,6 @@ const ItemListContainer = ({ titulo }) => {
         <>
             <section className="itemListContainer--content">
                 <div className="container">
-                    {console.log("FIREBASE", itemsFirebase)}
                     <h2 className="section--subtitle" >Our <span className="green" >Products_</span></h2>
                     
                     {itemsFirebase.length ? 

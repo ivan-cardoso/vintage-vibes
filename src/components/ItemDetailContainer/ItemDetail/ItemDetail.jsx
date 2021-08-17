@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import "./ItemDetail.css"
 import AddCart from '../../AddCart/AddCart.jsx'
 import ItemCount from "../../ItemCount/ItemCount.jsx"
@@ -14,8 +14,8 @@ import ButtonDark from '../../Button/ButtonDark.jsx'
 const ItemDetail = () => {
 
 
-    const {compra, countAdded, itemAdded, getCount, addProduct} = useCartContext()
-    const {itemsFirebase, itemDetail} = useProductContext()
+    const {compra} = useCartContext()
+    const {itemDetail} = useProductContext()
     const [showAdd, setShowAdd] = useState(true)
 
     const handleShowAdd = () =>{
@@ -24,9 +24,6 @@ const ItemDetail = () => {
 
     return (
         <>
-            {/* {itemDetail && itemDetail.id ?  */}
-            
-            {console.log("ITEM DETAIL", itemDetail)}
             {itemDetail.id ? 
                 <div className="itemDetail--container" >
                     <div className="container" >

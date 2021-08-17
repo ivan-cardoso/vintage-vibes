@@ -8,7 +8,6 @@ import firebase from "firebase/app";
 import { firestore } from "../../firebase"
 
 
-// N° de productos seleccionados & Item seleccionado
 export const CartContext = createContext()
 
 
@@ -35,29 +34,16 @@ export default function CartProvider ({children}){
     
     
     function addItem (){
-        // const localCart = []
-        // const cart = JSON.parse(myStorage.getItem("cartItems"))
-        // const item = localCart.find((e) => e.id === itemDetail.id)
-        
-        
         const isInCart = itemAdded.find((p) => p.id === itemDetail.id)
         if(isInCart){
             const add = isInCart.countAdded += countAdded
             setItemAdded([...itemAdded])
         }else{
             setItemAdded([...itemAdded, {...itemDetail, countAdded }]);
-            // localCart.push([...itemAdded, {...itemDetail, countAdded }])  
         }
-        
-        // console.log("ITEM LOCAL", cart)
-        // console.log("ITEM", item.countAdded)
-        
         setCompra(true)
     }
     
-    const checkout = (e) =>{
-        // setCompra(false)
-    } 
 
     const cleanProduct = (id) => {
         itemAdded.splice(
@@ -160,7 +146,6 @@ export default function CartProvider ({children}){
         setCompra, 
         getCount, 
         addItem, 
-        checkout,
         cleanProduct,
         cleanCart, 
         totalCart, 

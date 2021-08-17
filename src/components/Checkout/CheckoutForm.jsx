@@ -10,8 +10,7 @@ import { useCartContext } from "../Context/CartContext"
 
 function CheckoutForm() {
 
-    const {showForm, handleClose, createOrder, orderName,setOrderName, orderLastName, setOrderLastName, orderPhone, setOrderPhone, orderEmail, setOrderEmail,orderComments, setOrderComments, 
-        orderId, orderDone, handleShowOrder} = useCartContext()
+    const {showForm, handleClose, createOrder, orderName,setOrderName, orderLastName, setOrderLastName, orderPhone, setOrderPhone, orderEmail, setOrderEmail,orderComments, setOrderComments, orderId, orderDone, handleShowOrder} = useCartContext()
 
     return (
         <>

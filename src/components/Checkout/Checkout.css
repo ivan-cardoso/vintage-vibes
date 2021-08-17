@@ -2,11 +2,8 @@
     padding: 6rem 2rem 0rem;
 }
 
-
-
 .card--items{
     justify-content: flex-end;
-    /* flex-direction: column-reverse; */
     flex-direction: row;
     margin-bottom: 2rem;
 }

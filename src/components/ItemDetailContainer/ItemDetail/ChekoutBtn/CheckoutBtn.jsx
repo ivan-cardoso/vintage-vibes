@@ -9,11 +9,11 @@ function CheckoutBtn() {
 
     return (
        
-            <>
-                <NavLink to="/checkout">
-                <ButtonDark  onClick={checkout(), totalCart} text="Buy now" ></ButtonDark>     
-                </NavLink>    
-            </>
+        <>
+            <NavLink to="/checkout">
+            <ButtonDark  onClick={checkout(), totalCart} text="Buy now" ></ButtonDark>     
+            </NavLink>    
+        </>
         
     )
 }
