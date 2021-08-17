@@ -15,8 +15,6 @@ function About() {
                     <div className="about--section--img">
                         <h2 className="section--subtitle pt-4 pb-4 " >About <span className="green"> us_</span></h2>
                         <div className="about--img--background" >
-                            {/* <img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/11/b-boys-breakdancers.jpg" 
-                            className="about--img" /> */}
                         </div>
                     </div>
                 </div>

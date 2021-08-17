@@ -2,8 +2,8 @@ import React from 'react'
 import Modal from "react-bootstrap/Modal"
 import Form from "react-bootstrap/Form"
 import "./CheckoutForm.css"
-import ButtonClose from "../Button/ButtonClose"
-import CompleteLight from "../Button/CompleteLight"
+import ButtonClose from "../Button/ButtonClose.jsx"
+import CompleteLight from "../Button/CompleteLight.jsx"
 
 import { useCartContext } from "../Context/CartContext"
 

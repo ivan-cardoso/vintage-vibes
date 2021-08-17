@@ -1,6 +1,6 @@
 import React from 'react'
 import {useCartContext} from "../Context/CartContext"
-import Button from "../Button/Button"
+import Button from "../Button/Button.jsx"
 
 function AddCart() {
 

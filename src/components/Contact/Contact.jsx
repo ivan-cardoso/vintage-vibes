@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Form, Modal } from "react-bootstrap"
 import scrollTop from '../../utils/scrollTop'
-import CompleteDark from "../Button/CompleteDark"
-import ButtonClose from "../Button/ButtonClose"
+import CompleteDark from "../Button/CompleteDark.jsx"
+import ButtonClose from "../Button/ButtonClose.jsx"
 import "./Contact.css"
 import {useHistory} from "react-router-dom"
 

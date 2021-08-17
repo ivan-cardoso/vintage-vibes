@@ -4,7 +4,7 @@ import NavBar from "./NavBar/NavBar.jsx";
 import ItemListContainer from "./ItemListContainer/ItemListContainer.jsx";
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer.jsx";
 import Principal from "./Principal/Principal.jsx"
-import { BrowserRouter, Switch, Route, Redirect, useLocation } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 
 import CartProvider from "./Context/CartContext"
 import ProductProvider from './Context/ProductContext';
@@ -32,29 +32,17 @@ const App = ()=> {
 
             <Route exact path="/"  component={Principal}></Route>
 
-            <Route path="/productos/" exact>
-              <ItemListContainer />
-            </Route>
+            <Route exact path="/products"  component={ItemListContainer}></Route>
 
-            <Route exact path="/productos/:id"  >
-                <ItemListContainer  /> 
-            </Route>
+            <Route exact path="/products/:id"  component={ItemListContainer}></Route>
 
-            <Route exact path="/item/:id">
-              <ItemDetailContainer />
-            </Route>
+            <Route exact path="/item/:id"  component={ItemDetailContainer}></Route>
 
-            <Route exact path="/checkout/">
-              <Checkout />
-            </Route>
+            <Route exact path="/checkout"  component={Checkout}></Route>
 
-            <Route exact path="/nosotros/">
-              <About/>
-            </Route>
+            <Route exact path="/about"  component={About}></Route>
 
-            <Route exact path="/contacto/">
-              <Contact/>
-            </Route>
+            <Route exact path="/contact"  component={Contact}></Route>
 
             <Redirect to={"/"} />
           </Switch>

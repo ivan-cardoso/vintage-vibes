@@ -2,7 +2,7 @@ import React from 'react'
 import { useCartContext } from "../Context/CartContext"
 import "./CartItem.css"
 import "./CartItem.css"
-import ButtonClose from "../Button/ButtonClose"
+import ButtonClose from "../Button/ButtonClose.jsx"
 
 
 function CartItem() {

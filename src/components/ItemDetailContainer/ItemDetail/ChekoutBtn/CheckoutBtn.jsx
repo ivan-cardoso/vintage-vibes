@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
 import {useCartContext} from "../../../Context/CartContext"
-import ButtonDark from  "../../../Button/ButtonDark"
+import ButtonDark from  "../../../Button/ButtonDark.jsx"
 
 function CheckoutBtn() {
 

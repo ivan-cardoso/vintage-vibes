@@ -8,7 +8,7 @@ import {Spinner} from "react-bootstrap"
 import {useCartContext} from "../../Context/CartContext"
 import {useProductContext} from "../../Context/ProductContext"
 import {Link} from 'react-router-dom'
-import ButtonDark from '../../Button/ButtonDark'
+import ButtonDark from '../../Button/ButtonDark.jsx'
 
 
 const ItemDetail = () => {

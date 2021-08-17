@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import "./Item.css"
 import { NavLink } from "react-router-dom"
-import Button from "../../../Button/Button"
+import Button from "../../../Button/Button.jsx"
 import scrollTop from "../../../../utils/scrollTop"
 
 const Item = ({ item }) => {

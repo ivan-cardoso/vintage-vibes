@@ -113,7 +113,7 @@ const NavBar = () => {
         // </Navbar>
 
         <header className="header__middle">
-        <div className="container">
+        <div className="container  navbar--container">
             <div className="row">
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
@@ -153,12 +153,12 @@ const NavBar = () => {
                                 <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </NavLink> </li> */}
                                 {categories.map((category)=>{
                                     return (
-                                        <Link to={`/productos/${category}`} onClick={toggleClass} activeClassName='is-active'>
+                                        <Link to={`/products/${category}`} onClick={toggleClass} activeClassName='is-active'>
                                             <p className="navbar--items__estilos" >{category}</p>
                                         </Link>
                                     )
                                 })}
-                                <Link to={`/productos`} onClick={toggleClass} activeClassName='is-active'>
+                                <Link to={`/products`} onClick={toggleClass} activeClassName='is-active'>
                                         <p className="navbar--items__estilos" >see all</p>
                                 </Link>
                             
@@ -167,11 +167,11 @@ const NavBar = () => {
                         <li className="menu-item " >
                             <NavLink onClick={toggleClass} 
                             activeClassName='is-active' 
-                            to={`/nosotros`}> about </NavLink> </li>
+                            to={`/about`}> about </NavLink> </li>
                         <li className="menu-item " >
                             <NavLink onClick={toggleClass} 
                             activeClassName='is-active' 
-                            to={"/contacto"}> contact </NavLink> </li>
+                            to={"/contact"}> contact </NavLink> </li>
                         
                         <li className="menu-item" >
                             <NavLink onClick={toggleClass} 
