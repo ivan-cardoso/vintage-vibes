@@ -36,7 +36,7 @@ function Footer() {
                         </div >
 
                         <div className="col-12 col-md-6" >
-                            <p className="footer--text">Developer</p>
+                            {/* <p className="footer--text">Developer</p> */}
                             <p className="footer--text footer--autor">Ivan Cardoso</p>
 
                             <div className="d-flex">
