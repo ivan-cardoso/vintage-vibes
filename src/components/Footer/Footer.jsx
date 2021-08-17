@@ -15,22 +15,22 @@ function Footer() {
                             <NavLink to="/" exact className="footer--link">
                                 <p className="footer--text">
                                     Home
-                            </p>
+                                </p>
                             </NavLink>
-                            <NavLink to="/productos" className="footer--link">
+                            <NavLink to="/products" className="footer--link">
                                 <p className="footer--text">
                                     Products
-                            </p>
+                                </p>
                             </NavLink>
-                            <NavLink to="/nosotros" className="footer--link">
+                            <NavLink to="/about" className="footer--link">
                                 <p className="footer--text">
                                     About
-                            </p>
+                                </p>
                             </NavLink>
-                            <NavLink to="/contacto" className="footer--link">
+                            <NavLink to="/contact" className="footer--link">
                                 <p className="footer--text">
                                     Contact
-                            </p>
+                                </p>
                             </NavLink>
                         </div >
 
