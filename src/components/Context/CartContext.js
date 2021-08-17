@@ -128,13 +128,13 @@ export default function CartProvider ({children}){
         })
         .catch((err) =>{
             console.log(err)
-    
         })
     }
-
+    
     const [showOrderDone, setShowOrderDone] = useState(false);
-
+    
     const handleCloseOrder = () =>{
+        setShowForm(false)
         setShowOrderDone(false);
         setOrderId("")
         setItemAdded([])
@@ -147,7 +147,6 @@ export default function CartProvider ({children}){
 
 
     const orderDone = () =>{
-        setShowForm(false)
         setShowOrderDone(true);
     }
 
