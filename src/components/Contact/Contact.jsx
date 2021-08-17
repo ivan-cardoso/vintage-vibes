@@ -36,8 +36,9 @@ function Contact() {
 
   return (
     <>
+    <div className="contact--section">
       <div className="container ">
-        <h2 className="section--subtitle green mt-4 mb-4" >Contact_</h2>
+        <h2 className="section--subtitle green mb-4" >Contact_</h2>
 
         <div className="d-flex justify-content-center mt-5">
           {console.log("VALUES", values)}
@@ -128,6 +129,7 @@ function Contact() {
 
 
         </div>
+      </div>
       </div>
     </>
   )

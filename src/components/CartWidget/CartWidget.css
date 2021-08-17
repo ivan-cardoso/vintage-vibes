@@ -2,6 +2,12 @@
     position: relative;
 }
 
+.cart--icon__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3rem;
+}
 .navitem--cartwidget{
     width: 1.3rem;
 }
@@ -9,16 +15,33 @@
     position: absolute;
     width: 1rem;
     font-family: "Montserrat", sans-serif;
-    background-color: #4d486f;
-    color: white;
+    background-color: #fff;
+    color: #4d486f;
     font-size: 0.7rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-    top: 2.2rem;
-    margin-left: 1rem;
+    top: -.7rem;
+    margin-left: 1.5rem;
     border-radius: 50%;
+    height: 1rem;
+    
+}
+
+.bi-cart3{
+    color: #fff ;
 }
 
 .bi-cart3:hover{
     color: #67ad7c ;
+}
+
+@media (min-width:956px)  {
+    .bi-cart3{
+        color: rgb(70, 68, 68) ;
+    }
+    .cartwidget-count{
+        background-color: #4d486f;
+        color: #fff;
+    }
 }

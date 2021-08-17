@@ -1,6 +1,7 @@
 .itemListContainer--content{
     background-color:#fff1ff;
     min-height: 80vh;
+    padding-top: 6rem;
 }
 .productos--title{
     padding: 2.5rem 0;

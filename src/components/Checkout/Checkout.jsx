@@ -25,8 +25,7 @@ function Checkout() {
     return (
 
         <>
-            {console.log("ITEM ADDED", itemAdded)}
-            <div className="container">
+            <div className="container checkout--section">
                 {itemAdded.length === 0 ? (
                     <div className="empty--cart">
                         <div>

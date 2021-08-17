@@ -1,3 +1,8 @@
+.contact--section{
+    padding:6rem 0 2rem;
+    background-color: #fff1ff;
+}
+
 @media (min-width:993px){
     
     .contact--form{
