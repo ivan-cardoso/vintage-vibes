@@ -24,3 +24,5 @@ yarn-error.log*
 # notes
 apikey.txt
 notes.txt
+# Local Netlify folder
+.netlify
