@@ -30,8 +30,8 @@ const ItemDetail = () => {
                     <div className="row pt-4">
                         <div className="col-12 col-md-6 itemDetail--imgContainer">
                                 {itemDetail.artist ? 
-                                    <img className="itemDetail--img--vinyl" src={itemDetail.image} />
-                                : <img className="itemDetail--img" src={itemDetail.image} />
+                                    <img className="itemDetail--img--vinyl" alt={itemDetail.title} src={itemDetail.image} />
+                                : <img className="itemDetail--img" alt={itemDetail.title} src={itemDetail.image} />
                                 }
                         </div>                   
 

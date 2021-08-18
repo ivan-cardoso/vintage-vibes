@@ -28,6 +28,7 @@ function About() {
                             <div className="col-12 col-lg-6">
                                 <div className="about--img--container" >
                                     <img height="auto" 
+                                    alt="Old outfits"
                                     src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/11/double-denim.jpg" 
                                     className="about--img" />
                                 </div>
@@ -75,6 +76,7 @@ function About() {
                             <div className="col-12 col-lg-6 mt-4">
                                 <div className="about--img--container" >
                                     <img height="auto" 
+                                    alt="Old guy"
                                     src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/11/pink-hair-military-coat.jpg" 
                                     className="about--img" />
                                 </div>

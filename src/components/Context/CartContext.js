@@ -13,7 +13,7 @@ export const CartContext = createContext()
 
 export default function CartProvider ({children}){  
     
-    const {item, id, itemDetail} = useProductContext()
+    const {id, itemDetail} = useProductContext()
 
     const [itemAdded, setItemAdded] = useState(()=>
         JSON.parse(window.localStorage.getItem("cartItems")) || []
@@ -58,8 +58,6 @@ export default function CartProvider ({children}){
         e.stopPropagation()
         setItemAdded([])
     }
-
-    const [totalPrice, setTotalPrice] = useState(0)
     
     const totalCart = () =>{
         setCompra(false)
@@ -158,8 +156,6 @@ export default function CartProvider ({children}){
     } }> {children} </CartContext.Provider>
 } 
 
-
-//Cuando cualquier componente use este Hook (useCartContext), va a usar el value de CartContext
 export const useCartContext = () => useContext(CartContext)
 
 

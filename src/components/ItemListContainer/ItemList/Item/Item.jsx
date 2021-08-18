@@ -18,8 +18,8 @@ const Item = ({ item }) => {
                     <NavLink to={`/item/${id}`}>
                         <div className="listContainer--img">
                             {item.artist ? 
-                                <img className="vinyl--img" src={image} /> 
-                            :<img className="item--img" src={image} />
+                                <img className="vinyl--img" alt={title} src={image} /> 
+                            :<img className="item--img"  alt={title} src={image} />
                             }
                         </div>
                     </NavLink>

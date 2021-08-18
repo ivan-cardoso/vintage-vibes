@@ -1,7 +1,6 @@
 import React from 'react'
 import { useCartContext } from "../Context/CartContext"
 import Modal from "react-bootstrap/Modal"
-import {Link} from 'react-router-dom'
 import ButtonClose from "../Button/ButtonClose.jsx"
 import Button from "../Button/Button.jsx"
 import "./OrderDone.css"
@@ -10,7 +9,7 @@ import "./OrderDone.css"
 
 
 function OrderDone() {
-    const {orderId, orderDone, showOrderDone, handleShowOrder, handleCloseOrder } = useCartContext()
+    const {orderId, showOrderDone, handleCloseOrder } = useCartContext()
     
     return (
         <>

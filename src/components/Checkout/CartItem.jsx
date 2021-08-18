@@ -21,7 +21,7 @@ function CartItem() {
                 return (
                     <div key={item.id} className="row itemAdded--card  ">
                         <div className="col-12 col-md-3 itemAdded--img--container" >
-                            <img src={item.image}  className="itemAdded--img"  />
+                            <img src={item.image} alt={item.title}  className="itemAdded--img"  />
                         </div>
 
                         <div className="col-12 col-md-9  itemAdded--details">

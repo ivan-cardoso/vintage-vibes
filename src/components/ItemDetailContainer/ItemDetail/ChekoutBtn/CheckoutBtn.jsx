@@ -5,13 +5,13 @@ import ButtonDark from  "../../../Button/ButtonDark.jsx"
 
 function CheckoutBtn() {
 
-    const {checkout, totalCart} = useCartContext() 
+    const {totalCart} = useCartContext() 
 
     return (
        
         <>
             <NavLink to="/checkout">
-            <ButtonDark  onClick={checkout(), totalCart} text="Buy now" ></ButtonDark>     
+            <ButtonDark  onClick={totalCart} text="Buy now" ></ButtonDark>     
             </NavLink>    
         </>
         
