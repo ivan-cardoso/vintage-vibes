@@ -10,7 +10,7 @@ import { useCartContext } from "../Context/CartContext"
 
 function CheckoutForm() {
 
-    const {showForm, handleClose, createOrder,setOrderName, setOrderLastName, setOrderPhone, setOrderEmail, setOrderComments, orderDone} = useCartContext()
+    const {showForm, handleClose, createOrder, orderDone, handleBuyerChange} = useCartContext()
 
     return (
         <>
@@ -31,21 +31,24 @@ function CheckoutForm() {
                             <Form.Control  
                                 className="form--input"
                                 required
-                                onChange={(e) =>{setOrderName(e.target.value)}} 
+                                name="name"
+                                onChange={(e) =>{handleBuyerChange(e)}} 
                                 type="text" />
 
                             <Form.Label className="form--label" >Lastname*</Form.Label>
                             <Form.Control  
                                 className="form--input" 
                                 required
-                                onChange={(e) =>{setOrderLastName(e.target.value)}} 
+                                name="lastName"
+                                onChange={(e) =>{handleBuyerChange(e)}} 
                                 type="text"  />
 
                             <Form.Label className="form--label" >Email*</Form.Label>
                             <Form.Control   
                                 className="form--input" 
                                 required
-                                onChange={(e) =>{setOrderEmail(e.target.value)}} 
+                                name="email"
+                                onChange={(e) =>{handleBuyerChange(e)}} 
                                 type="email"  
                             />
                                                             
@@ -53,8 +56,9 @@ function CheckoutForm() {
                             <Form.Control   
                                 className="form--input"
                                 required 
-                                onChange={(e) =>{setOrderPhone(e.target.value)}} 
-                                type="text"  
+                                name="phone"
+                                onChange={(e) =>{handleBuyerChange(e)}} 
+                                type="number"  
                             />
                         </Form.Group>
 
@@ -62,7 +66,8 @@ function CheckoutForm() {
                             <Form.Label className="form--label" >Comments</Form.Label>
                             <Form.Control 
                             className="form--input" 
-                            onChange={(e) =>{setOrderComments(e.target.value)}}  
+                            name="comments"
+                            onChange={(e) =>{handleBuyerChange(e)}}  
                             as="textarea" 
                             rows={1} />
                         </Form.Group>

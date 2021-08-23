@@ -80,27 +80,27 @@ export default function CartProvider ({children}){
     } 
     const handleShow = () => setShowForm(true);
 
+    const [orderBuyer, setOrderBuyer] = useState({
+        name: "",
+        lastName: "",
+        phone: 0,
+        email:"",
+        comments: "",
+    })
 
-    const [orderName, setOrderName] = useState("")
-    const [orderLastName, setOrderLastName] = useState("")
-    const [orderPhone, setOrderPhone] = useState("")
-    const [orderEmail, setOrderEmail] = useState("")
-    const [orderComments, setOrderComments] = useState("")
+    const handleBuyerChange = (e) =>{
+        const {name, value} = e.target
+        setOrderBuyer({...orderBuyer, [name] : value})
+    }
 
     const [orderId, setOrderId] = useState("")
 
     const createOrder = (e) => {
         e.preventDefault()
         const order = {
-            buyer: {
-                name: orderName,
-                lastName: orderLastName,
-                phone: orderPhone,
-                email:orderEmail
-            },
+            buyer: orderBuyer,
             items: [...itemAdded],
             date: firebase.firestore.FieldValue.serverTimestamp(),
-            comments: orderComments,
             total: totalCart()
         }
 
@@ -151,8 +151,13 @@ export default function CartProvider ({children}){
         showForm,
         handleClose,
         handleShow,
-        createOrder,orderName,setOrderName, orderLastName, setOrderLastName,orderPhone, setOrderPhone, orderEmail, setOrderEmail, orderId,orderComments, setOrderComments,
-        orderDone, showOrderDone, handleShowOrder, handleCloseOrder, 
+        handleBuyerChange,
+        createOrder, 
+        orderId,
+        orderDone, 
+        showOrderDone, 
+        handleShowOrder, 
+        handleCloseOrder, 
     } }> {children} </CartContext.Provider>
 } 
 
